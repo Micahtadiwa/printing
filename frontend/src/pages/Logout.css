@@ -1,0 +1,100 @@
+.logout-container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.logout-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 60px 50px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+.logout-icon {
+  font-size: 5rem;
+  margin-bottom: 30px;
+  animation: wave 1s ease-in-out infinite;
+}
+
+.logout-card h1 {
+  font-size: 2.2rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.logout-card p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.logout-redirect {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #2a5298;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 30px auto 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logout-card {
+    padding: 50px 30px;
+  }
+
+  .logout-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .logout-icon {
+    font-size: 4rem;
+  }
+}
