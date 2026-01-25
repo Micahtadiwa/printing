@@ -8,12 +8,15 @@ import Logout from './pages/Logout';
 import Register from './pages/Register';
 import Settings from './pages/Settings';
 import Contact from './pages/Contact';
+import Quote from './pages/quote';
 import About from './pages/About'; // Ensure you have this component
-
+import Navbar from './pages/navbar';
+import './App.css';
 const App = () => {
   return (
-    <div>
-      <Routes>
+    <div className="app-container">
+      <Navbar />
+      <Routes className="app-routes">
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -21,6 +24,7 @@ const App = () => {
         <Route path="/logout" element={<Logout />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/quote" element={<Quote />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

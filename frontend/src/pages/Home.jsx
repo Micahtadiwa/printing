@@ -1,47 +1,68 @@
-import React from 'react'
-import './Home.css'
+import React from 'react';
+import './Home.css';
 
-function Home() {
+const Home = () => {
   return (
     <div className="home-container">
-      <div className="hero-section">
-        <h1 className="hero-title">Welcome to TM Printing </h1>
-        <p className="hero-subtitle">Your trusted partner for quality printing solutions</p>
-        <div className="hero-buttons">
-          <a href="/register" className="btn btn-primary">Get Started</a>
-          <a href="/about" className="btn btn-secondary">Learn More</a>
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="hero-title">Welcome to Our Platform</h1>
+          <p className="hero-subtitle">
+            Discover amazing features and services designed to help you succeed
+          </p>
+          <div className="hero-buttons">
+            <button className="btn btn-primary">Get Started</button>
+            <button className="btn btn-secondary">Learn More</button>
+          </div>
         </div>
-      </div>
-      
-      <div className="features-section">
-        <div className="container">
-          <h2 className="section-title">Why Choose Us?</h2>
+      </section>  
+
+      {/* Features Section */}
+      <section className="features-section">
+        <div className="features-container">
+          <h2 className="section-title">Our Features</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">🖨️</div>
-              <h3>Quality Printing</h3>
-              <p>State-of-the-art equipment ensuring the highest quality prints</p>
-            </div>
-            <div className="feature-card">
               <div className="feature-icon">⚡</div>
-              <h3>Fast Delivery</h3>
-              <p>Quick turnaround times without compromising on quality</p>
+              <h3>Fast Performance</h3>
+              <p>Lightning fast performance for all your needs</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">💰</div>
-              <h3>Affordable Prices</h3>
-              <p>Competitive pricing to meet your budget requirements</p>
+              <div className="feature-icon">🔒</div>
+              <h3>Secure & Safe</h3>
+              <p>Enterprise-grade security for your data</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">🎨</div>
-              <h3>Custom Designs</h3>
-              <p>Professional design services to bring your vision to life</p>
+              <div className="feature-icon">🌐</div>
+              <h3>Global Reach</h3>
+              <p>Accessible from anywhere in the world</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  )
-}
+      </section>
 
-export default Home
+      {/* Stats Section */}
+      <section className="stats-section">
+        <div className="stats-container">
+          <div className="stats-grid">
+            <div className="stat-card">
+              <span className="stat-number">10K+</span>
+              <span className="stat-label">Happy Users</span>
+            </div>
+            <div className="stat-card">
+              <span className="stat-number">99.9%</span>
+              <span className="stat-label">Uptime</span>
+            </div>
+            <div className="stat-card">
+              <span className="stat-number">24/7</span>
+              <span className="stat-label">Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
