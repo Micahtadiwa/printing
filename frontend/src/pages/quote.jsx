@@ -61,20 +61,22 @@ const quote= () => {
   };
 
   const serviceOptions = [
-    'Web Development',
-    'Mobile App Development',
-    'UI/UX Design',
-    'Consultation',
-    'Maintenance',
+    'Printing Services',
+    'Customized Covers',
+    'Binding Solutions',
+    'Design Services',
+    'Dissertation Support',
+    'Editing Services',
+    'Stationery Supplies',
     'Other'
   ];
 
   const budgetOptions = [
-    'Less than $500',
-    '$500 - $1,000',
-    '$1,000 - $2,500',
-    '$2,500 - $5,000',
-    '$5,000+',
+    'Less than $15',
+    '$15 - $50',
+    '$50 - $100',
+    '$100 - $250',
+    '$250+',
     'To be discussed'
   ];
 
