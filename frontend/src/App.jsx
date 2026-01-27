@@ -7,7 +7,7 @@ import Login from './pages/Login';
 import Logout from './pages/Logout';
 import Register from './pages/Register';
 import Settings from './pages/Settings';
-import Contact from './pages/Contact';
+import Contact from './pages/contact';
 import Quote from './pages/quote';
 import About from './pages/About'; // Ensure you have this component
 import Navbar from './pages/navbar';
