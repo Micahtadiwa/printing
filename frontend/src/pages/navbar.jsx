@@ -54,11 +54,11 @@ const navbar = () => {
       name: 'Services', 
       icon: <FaPrint />,
       dropdown: [
-        { path: '/services/offset', name: 'Offset Printing', icon: <FaPrint /> },
-        { path: '/services/digital', name: 'Digital Printing', icon: <FaPalette /> },
-        { path: '/services/large-format', name: 'Large Format', icon: <FaBoxOpen /> },
-        { path: '/services/packaging', name: 'Packaging', icon: <FaBoxOpen /> },
-        { path: '/services/garments', name: 'Garment Printing', icon: <FaTshirt /> },
+        { path: '/services/printing', name: 'Paper Printing', icon: <FaPrint /> },
+        { path: '/services/cover', name: 'Custom covers', icon: <FaPalette /> },
+        { path: '/services/binding', name: 'Binding', icon: <FaBoxOpen /> },
+        { path: '/services/designing', name: 'Designing', icon: <FaBoxOpen /> },
+        { path: '/services/dessertation', name: 'Dessertation Correction', icon: <FaTshirt /> },
         { path: '/services/stationery', name: 'Stationery', icon: <FaNewspaper /> },
       ]
     },
@@ -266,7 +266,7 @@ const navbar = () => {
           <span className="bottom-nav-label">Home</span>
         </Link>
         
-        <Link to="/services/offset" className={`bottom-nav-item ${location.pathname.includes('/services') ? 'active' : ''}`}>
+        <Link to="/services" className={`bottom-nav-item ${location.pathname==='/services' ? 'active' : ''}`}>
           <FaPrint className="bottom-nav-icon" />
           <span className="bottom-nav-label">Services</span>
         </Link>
@@ -277,9 +277,9 @@ const navbar = () => {
           </Link>
         </div>
         
-        <Link to="/landing" className={`bottom-nav-item ${location.pathname === '/landing' ? 'active' : ''}`}>
+        <Link to="/about" className={`bottom-nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
           <FaLayerGroup className="bottom-nav-icon" />
-          <span className="bottom-nav-label">Solutions</span>
+          <span className="bottom-nav-label">About</span>
         </Link>
         
         <Link to="/contact" className={`bottom-nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>

@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import Quote from './pages/quote';
 import About from './pages/About'; // Ensure you have this component
 import Navbar from './pages/navbar';
+import Services from './pages/services'; 
 import './App.css';
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/logout" element={<Logout />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/quote" element={<Quote />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/contact" element={<Contact />} />
